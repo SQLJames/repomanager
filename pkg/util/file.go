@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	folderPermissons fs.FileMode = 0o755
+	FolderPermissons fs.FileMode = 0o755
 )
 
 func GetHomeDir() (directory string, err error) {
@@ -37,7 +37,7 @@ func MakeStorageLocation() (storageLocation string) {
 
 	storageLocation = path.Join(baseDir, "."+applicationName)
 
-	err = os.MkdirAll(storageLocation, folderPermissons)
+	err = os.MkdirAll(storageLocation, FolderPermissons)
 	if err != nil {
 		jlogr.Logger.ILog.Fatal(err, "error creating storagelocation", "location", storageLocation)
 	}

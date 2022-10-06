@@ -22,7 +22,7 @@ func repos() *cli.Command {
 			&cli.StringFlag{
 				Name:     "directory",
 				Usage:    "used to define folder to search in",
-				Required: false,
+				Required: true,
 			},
 		},
 	}
