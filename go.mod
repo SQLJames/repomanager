@@ -11,7 +11,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.8.0
 	github.com/urfave/cli/v2 v2.17.1
-	k8s.io/klog/v2 v2.80.1
+	k8s.io/klog/v2 v2.90.1
 )
 
 require (
